@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="scrypt.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="photo">Photo</label>
+            <input type="file" id="photo">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" autocomplete="email">
+        </div>
+        <div>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <label for="city">Where do you live</label>
+            <select name="city" id="city">
+                <option value="yerevan">Yerevan</option>
+                <option selected value="moscow">Moscow</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <button>Save</button>
+    </form>
 </body>
 </html>
